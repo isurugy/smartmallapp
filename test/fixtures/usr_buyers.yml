@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  adressLine1: MyString
+  adressLine2: MyString
+  addressLine3: MyString
+  city: MyString
+  zipCode: 1
+  country: MyString
+  dob: 2017-03-15
+  anniversary: 2017-03-15
+
+two:
+  adressLine1: MyString
+  adressLine2: MyString
+  addressLine3: MyString
+  city: MyString
+  zipCode: 1
+  country: MyString
+  dob: 2017-03-15
+  anniversary: 2017-03-15

@@ -1,0 +1,16 @@
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><%= link_to "Home", root_path %></li>
+      <li><a href="#">Page 1</a></li>
+      <li><a href="#">Page 2</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><%= link_to " Sign Up", new_user_registration_path, method: :get, class:"glyphicon glyphicon-log-in" %></li>
+      <li><%= link_to " Login", new_user_session_path, method: :get, class:"glyphicon glyphicon-log-in" %></li>
+    </ul>
+  </div>
+</nav>

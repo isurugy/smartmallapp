@@ -1,0 +1,2 @@
+class UsrBuyer < ApplicationRecord
+end
