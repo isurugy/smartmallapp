@@ -1,15 +1,18 @@
 Rails.application.routes.draw do
+  get 'buyers/index'
+  post '/buyers/new'
+
   get 'buyers/new'
 
-  post 'buyers/new'
+  post 'buyers/create'
 
-  get 'buyers/create'
+  post 'buyers/update'
 
-  get 'buyers/update'
+  get 'buyers/edit'
 
   get 'buyers/destroy'
 
-  # get 'welcome/index'
+
   root 'welcome#index'
   # devise_for :users
   devise_for :users, :controllers => { registrations: 'registrations' }

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170315123714) do
+ActiveRecord::Schema.define(version: 20170317032456) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -35,8 +35,8 @@ ActiveRecord::Schema.define(version: 20170315123714) do
   end
 
   create_table "usr_buyers", force: :cascade do |t|
-    t.string   "adressLine1"
-    t.string   "adressLine2"
+    t.string   "addressLine1"
+    t.string   "addressLine2"
     t.string   "addressLine3"
     t.string   "city"
     t.integer  "zipCode"
@@ -45,8 +45,7 @@ ActiveRecord::Schema.define(version: 20170315123714) do
     t.date     "anniversary"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
-    t.integer  "users_id"
-    t.index ["users_id"], name: "index_usr_buyers_on_users_id", using: :btree
+    t.integer  "user_id"
   end
 
 end
